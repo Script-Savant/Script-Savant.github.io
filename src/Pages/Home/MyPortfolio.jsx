@@ -13,7 +13,7 @@ export default function MyPortfolio() {
           <button
             className="btn btn-github"
             onClick={() =>
-              window.open("https://github.com/alex-njuguna", "_blank")
+              window.open("https://github.com/Script-Savant", "_blank")
             }
           >
             <svg
