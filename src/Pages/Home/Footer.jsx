@@ -112,7 +112,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://twitter.com/MADE___NIGGA"
+                href="https://twitter.com/alexkienjeku"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
