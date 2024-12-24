@@ -64,7 +64,7 @@
         "CSS",
         "SQLite"
       ],
-      "link": "https://github.com/alex-njuguna/study-portal.git"
+      "link": "https://github.com/Script-Savant/study-portal.git"
     },
     {
       "id": "2",
@@ -80,7 +80,7 @@
         "CSS",
         "Mpesa"
       ],
-      "link": "https://github.com/alex-njuguna/Farmers-Market-Ecommerce"
+      "link": "https://github.com/Script-Savant/Farmers-Market-Ecommerce"
     },
     {
       "id": "3",
@@ -94,7 +94,7 @@
         "Redux Toolkit",
         "Tailwind"
       ],
-      "link": "https://github.com/alex-njuguna/redux-redux-toolkit/tree/main/redux-store"
+      "link": "https://github.com/Script-Savant/redux-redux-toolkit/tree/main/redux-store"
     },
     {
       "id": "4",
@@ -102,7 +102,7 @@
       "title": "movie app",
       "description": "A simulation of a movie app that allows for filtering on category and viewing trailers.\nData and which constitutes images and trailer links are real",
       "technologies": ["JavaScript", "ReactJS", "HTML", "Bootstrap", "CSS"],
-      "link": "https://github.com/alex-njuguna/movie-app.git"
+      "link": "https://github.com/Script-Savant/movie-app.git"
     }
   ],
   "testimonial": [
