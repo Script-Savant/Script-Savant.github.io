@@ -15,7 +15,7 @@ function Navbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu();
       }
     };
 
@@ -28,7 +28,7 @@ function Navbar() {
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu();
     }
   }, []);
 
@@ -45,7 +45,12 @@ function Navbar() {
           to="heroSection"
           className="navbar--content"
         >
-          <img className="rounded-circle" src="./img/logo.jpeg" alt="Logo" style={{width: "30px"}} />
+          <img
+            className="rounded-circle"
+            src="./img/logo.jpeg"
+            alt="Logo"
+            style={{ width: "30px" }}
+          />
         </Link>
       </div>
       <a
@@ -113,6 +118,16 @@ function Navbar() {
             >
               Testimonials
             </Link>
+          </li>
+          <li>
+            <a
+              href="/resume"
+              onClick={closeMenu}
+              className="navbar--content"
+              target="_blank"
+            >
+              Resume
+            </a>
           </li>
         </ul>
       </div>

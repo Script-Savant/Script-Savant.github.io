@@ -6,6 +6,7 @@ import MyPortfolio from "../MyPortfolio";
 import MySkills from "../MySkills";
 import Testimonial from "../Testimonials";
 
+
 export default function Home() {
   return (
     <>
