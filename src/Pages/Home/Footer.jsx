@@ -16,7 +16,7 @@ function Footer() {
             to="heroSection"
             className="text-md"
           >
-            <img src="./img/logo.jpeg" className="rounded-circle" alt="Logoipsum" style={{width: "30px"}}/>
+            <img src="./img/logo.jpeg" className="rounded-circle" alt="Logoipsum" style={{ width: "30px" }} />
           </Link>
         </div>
         <div className="footer--items">
@@ -151,7 +151,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              +254727433148
+              +254117379468
             </li>
           </ul>
         </div>

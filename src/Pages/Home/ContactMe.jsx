@@ -66,7 +66,7 @@ export default function ContactMe() {
           <label htmlFor="phone-number" className="contact--label">
             <span className="text-md">phone-number</span>
             <input
-              type="number"
+              type="tel"
               className="contact--input text-md"
               name="phone-number"
               id="phone-number"
@@ -76,38 +76,39 @@ export default function ContactMe() {
               onChange={(e) => setPhoneNumber(e.target.value)}
             />
           </label>
+          <label htmlFor="choose-topic" className="contact--label">
+            <span className="text-md">Choose a topic</span>
+            <select
+              id="choose-topic"
+              className="contact--input text-md"
+              value={topic}
+              onChange={(e) => setTopic(e.target.value)}
+            >
+              <option>Select One...</option>
+              <option>Development</option>
+              <option>Testing and QA</option>
+              <option>Consultancy</option>
+              <option>Invite me for an interview</option>
+            </select>
+          </label>
+          <label htmlFor="message" className="contact--label">
+            <span className="text-md">Message</span>
+            <textarea
+              className="contact--input text-md"
+              id="message"
+              rows="8"
+              placeholder="Type your message..."
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </label>
+          <label htmlFor="checkbox" className="checkbox--label">
+            <input type="checkbox" required name="checkbox" id="checkbox" />
+            <span className="text-sm">I accept the terms</span>
+          </label>
         </div>
-        <label htmlFor="choode-topic" className="contact--label">
-          <span className="text-md">Choose a topic</span>
-          <select
-            id="choose-topic"
-            className="contact--input text-md"
-            value={topic}
-            onChange={(e) => setTopic(e.target.value)}
-          >
-            <option>Select One...</option>
-            <option>Development</option>
-            <option>Testing and QA</option>
-            <option>Consultancy</option>
-            <option>Invite me for an interview</option>
-          </select>
-        </label>
-        <label htmlFor="message" className="contact--label">
-          <span className="text-md">Message</span>
-          <textarea
-            className="contact--input text-md"
-            id="message"
-            rows="8"
-            placeholder="Type your message..."
-            required
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          />
-        </label>
-        <label htmlFor="checkbox" className="checkbox--label">
-          <input type="checkbox" required name="checkbox" id="checkbox" />
-          <span className="text-sm">I accept the terms</span>
-        </label>
+
         <div>
           <button type="submit" className="btn btn-primary contact--form--btn">
             Submit

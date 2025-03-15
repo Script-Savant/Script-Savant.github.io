@@ -34,13 +34,13 @@
       "id": "6",
       "src": "./img/skillset.jpg",
       "title": "Programming languages",
-      "description": "Python, Ruby, C, JavaScript."
+      "description": "Python, Ruby, C, JavaScript, C# & Go"
     },
     {
       "id": "7",
       "src": "./img/frameworks.png",
       "title": "Frameworks",
-      "description": "Django, Flask, ReactJS, Ruby on Rails and WordPress."
+      "description": "Django, Flask, ReactJS, Ruby on Rails and WordPress & .NET"
     },
     {
       "id": "8",
@@ -101,7 +101,13 @@
       "src": "https://www.youtube.com/embed/vyi8mHvUDLA?si=0hNlg42f72duGnDu",
       "title": "movie app",
       "description": "A simulation of a movie app that allows for filtering on category and viewing trailers.\nData and which constitutes images and trailer links are real",
-      "technologies": ["JavaScript", "ReactJS", "HTML", "Bootstrap", "CSS"],
+      "technologies": [
+        "JavaScript",
+        "ReactJS",
+        "HTML",
+        "Bootstrap",
+        "CSS"
+      ],
       "link": "https://github.com/Script-Savant/movie-app.git"
     }
   ],

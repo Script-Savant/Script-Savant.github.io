@@ -2,14 +2,14 @@ import data from "../../data/index.json";
 
 export default function MyPortfolio() {
   return (
-  
+
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
-        <div className="portfolio--container" style={{paddingLeft: '100px', paddingRight:'80px'}}>
+        <div className="portfolio--container" style={{ paddingLeft: '100px', paddingRight: '80px' }}>
           <p className="sub--title">Recent Projects</p>
           <h2 className="section--heading">My Portfolio</h2>
         </div>
-        <div style={{paddingLeft: '100px', paddingRight: '80px'}}>
+        <div style={{ paddingLeft: '100px', paddingRight: '80px' }}>
           <button
             className="btn btn-github"
             onClick={() =>
@@ -37,61 +37,61 @@ export default function MyPortfolio() {
       <div className="container">
         <div className="row">
           {data?.portfolio?.map((item, index) => (
-          <div className="col-md-3">
-          <div key={index} className="card m-2">
-            <div className="portfolio--section--img">
-              <iframe
-                src={item.src}
-                alt="Placeholder"
-                style={{ objectFit: "cover" }}
-                width="540"
-                height="315"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div className="portfolio--section--card--content">
-              <div>
-                <h3 className="portfolio--section--title text-capitalize" style={{marginBottom: '0.5rem'}}>{item.title}</h3>
-                {/* <p className="text-md">{item.description}</p> */}
-              </div>
-              <div className="technologies fs-6">
-                {item.technologies.map((technology) => (
-                  <button key={technology}>{technology}</button>
-                ))}
-              </div>
+            <div className="col-md-3">
+              <div key={index} className="card m-2">
+                <div className="portfolio--section--img">
+                  <iframe
+                    src={item.src}
+                    alt="Placeholder"
+                    style={{ objectFit: "cover" }}
+                    width="540"
+                    height="315"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div className="portfolio--section--card--content">
+                  <div>
+                    <h5 className="portfolio--section--title text-capitalize" style={{ marginBottom: '0.5rem' }}>{item.title}</h5>
+                    {/* <p className="text-md">{item.description}</p> */}
+                  </div>
+                  <div className="technologies fs-6">
+                    {item.technologies.map((technology) => (
+                      <button key={technology}>{technology}</button>
+                    ))}
+                  </div>
 
-              <a
-                className="text-sm portfolio--link"
-                href={item.link}
-                target="_blank"
-              >
-                View in Github
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
+                  <a
+                    className="text-sm portfolio--link"
+                    href={item.link}
+                    target="_blank"
+                  >
+                    View in Github
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                    >
+                      <path
+                        d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                        stroke="currentColor"
+                        stroke-width="2.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-          </div>
-          </div>
 
-        ))}
+          ))}
         </div>
-       
+
       </div>
     </section>
   );
