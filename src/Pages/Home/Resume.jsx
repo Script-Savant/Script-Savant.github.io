@@ -2,9 +2,9 @@ import React from "react";
 
 const Resume = () => {
     return (
-        <div className="container my-5 py-4 border border-danger">
+        <div className="container mx-auto my-5 py-4 border border-danger">
             <section id="resume" className="resume">
-                <div className="container aos-init aos-animate" data-aos="fade-up">
+                <div className="container-fluid" data-aos="fade-up">
                     <div className="section-title text-center mb-5">
                         <h2>Resume</h2>
                         <p className="fs-5 text-dark fst-italic">
@@ -13,12 +13,13 @@ const Resume = () => {
                             concept to completion with efficiency and excellence.
                         </p>
                     </div>
+                    <hr />
 
-                    <div className="row">
-                        <div className="col-lg-6 border-end">
+                    <div className="row my-2">
+                        <div className="col-lg-6 text-start border-end shadow pt-1 my-2">
                             <h3 className="resume-title">Summary</h3>
                             <div className="resume-item pb-0 mb-4">
-                                <h4>Alex Njuguna Kinuthia</h4>
+                                <h4 className="text-success">Alex Njuguna Kinuthia</h4>
                                 <p>
                                     <em>
                                         Innovative and deadline-driven Software Engineer with 5+ years
@@ -33,10 +34,11 @@ const Resume = () => {
                                     <li>njugunakinuthia013@gmail.com</li>
                                 </ul>
                             </div>
+                            <hr />
 
                             <h3 className="resume-title">Education</h3>
                             <div className="resume-item mb-4">
-                                <h4>Cloud Computing</h4>
+                                <h4 className="text-success">Cloud Computing</h4>
                                 <h5>2024</h5>
                                 <p>
                                     <em>AWS Restart</em>
@@ -51,7 +53,7 @@ const Resume = () => {
                                 </p>
                             </div>
                             <div className="resume-item mb-4">
-                                <h4>Post Graduate Diploma in Software Engineering</h4>
+                                <h4 className="text-success">Post Graduate Diploma in Software Engineering</h4>
                                 <h5>2022 - 2024</h5>
                                 <p>
                                     <em>ALX Software Engineering School</em>
@@ -65,7 +67,7 @@ const Resume = () => {
                                 </p>
                             </div>
                             <div className="resume-item mb-4">
-                                <h4>Bachelor of Science in Applied Computer Science</h4>
+                                <h4 className="text-success">Bachelor of Science in Applied Computer Science</h4>
                                 <h5>2015 - 2019</h5>
                                 <p>
                                     <em>
@@ -81,10 +83,10 @@ const Resume = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 shadow pt-1 my-2">
                             <h3 className="resume-title">Professional Experience</h3>
                             <div className="resume-item mb-4">
-                                <h4>Software Engineer/FullStack Software Developer</h4>
+                                <h4 className="text-success">Software Engineer/FullStack Software Developer</h4>
                                 <h5>2021 - Present</h5>
                                 <p>
                                     <em>Independent Contractor</em>
@@ -107,7 +109,7 @@ const Resume = () => {
                                 </ul>
                             </div>
                             <div className="resume-item mb-4">
-                                <h4>Internship → Software Engineer</h4>
+                                <h4 className="text-success">Internship → Software Engineer</h4>
                                 <h5>2018 - 2020</h5>
                                 <p>
                                     <em>Datacare Ltd, Westlands, Kenya</em>
@@ -132,10 +134,11 @@ const Resume = () => {
                                     </li>
                                 </ul>
                             </div>
+                            <hr />
 
                             <h3 className="resume-title">Certifications</h3>
                             <div className="resume-item pb-0">
-                                <h4>Professional & Academic Certifications</h4>
+                                <h4 className="text-success">Professional & Academic Certifications</h4>
                                 <p className="fst-italic">Accreditations</p>
                                 <ul>
                                     <li>AWS Certified Cloud Practitioner - AWS</li>

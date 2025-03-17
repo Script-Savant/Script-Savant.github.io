@@ -5,6 +5,7 @@ import HeroSection from "../HeroSection";
 import MyPortfolio from "../MyPortfolio";
 import MySkills from "../MySkills";
 import Testimonial from "../Testimonials";
+import Resume from "../Resume"
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <MyPortfolio />
       <Testimonial />
       <ContactMe />
+      <Resume />
       <Footer />
     </>
   );

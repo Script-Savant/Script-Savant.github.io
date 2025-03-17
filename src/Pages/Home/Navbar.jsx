@@ -119,7 +119,24 @@ function Navbar() {
               Testimonials
             </Link>
           </li>
+
           <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="resume"
+              className="navbar--content"
+            >
+              Resume
+            </Link>
+          </li>
+
+
+          {/* <li>
             <a
               href="/resume"
               onClick={closeMenu}
@@ -128,7 +145,8 @@ function Navbar() {
             >
               Resume
             </a>
-          </li>
+          </li> */}
+          
         </ul>
       </div>
       <Link
