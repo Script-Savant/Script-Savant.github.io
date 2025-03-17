@@ -11,9 +11,11 @@ export default function ContactMe() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formMessage = `${firstName} ${lastName} (${email}) wants to talk about ${topic}. Message: ${message}`;
+    const subject = `Contact Form Submission: ${topic}`;
+    const body = `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phoneNumber}\nTopic: ${topic}\nMessage: ${message}`;
+
     window.open(
-      `https://wa.me/${phoneNumber}?text=${encodeURIComponent(formMessage)}`,
+      `mailto:alexkienjeku@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
       "_blank"
     );
   };
@@ -64,7 +66,7 @@ export default function ContactMe() {
             />
           </label>
           <label htmlFor="phone-number" className="contact--label">
-            <span className="text-md">phone-number</span>
+            <span className="text-md">Phone Number</span>
             <input
               type="tel"
               className="contact--input text-md"
