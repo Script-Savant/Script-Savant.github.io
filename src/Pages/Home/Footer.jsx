@@ -112,7 +112,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://twitter.com/alexkienjeku"
+                href="https://x.com/favourite__son"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
