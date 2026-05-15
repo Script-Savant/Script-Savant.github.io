@@ -71,6 +71,7 @@
   "portfolio": [
     {
       "id": "1",
+      "type": "video",
       "src": "https://www.youtube.com/embed/Fn5mu_3fmV8?si=ja8xB6bSWICC0ZKF",
       "title": "Study Mate",
       "description": "A platform that brings together various study functionalities: Homework tracking, Books, To-do List, Notes, Dictionaries, Youtube Videos and Wikipedia.",
@@ -87,6 +88,7 @@
     },
     {
       "id": "2",
+      "type": "video",
       "src": "https://www.youtube.com/embed/8Nbfii55k-Y?si=PQK0L84G9tCG_hcY",
       "title": "Farmers Market",
       "description": "An E-Commerce that facilitates buying and selling of farm produce and input. Allows for authentication, advertising products, searching products, shopping through use of a cart and process payment with Mpesa.",
@@ -103,6 +105,7 @@
     },
     {
       "id": "3",
+      "type": "video",
       "src": "https://www.youtube.com/embed/kPsnOEYkbM0?si=S2E7IHAnNjc0iGH5",
       "title": "Redux Store",
       "description": "An online store for clothing. Allows for filtering based on type, selecting desired color and size. Cart functionality with price accumulation. Login and logout functionality also implemented.",
@@ -117,6 +120,7 @@
     },
     {
       "id": "4",
+      "type": "video",
       "src": "https://www.youtube.com/embed/vyi8mHvUDLA?si=0hNlg42f72duGnDu",
       "title": "Movie App",
       "description": "A simulation of a movie app that allows for filtering on category and viewing trailers. Data and images are real.",
@@ -128,7 +132,67 @@
         "CSS"
       ],
       "link": "https://github.com/Script-Savant/movie-app.git"
+    },
+    {
+      "id": "5",
+      "type": "slider",
+      "src": [
+        "./img/edupulse/web/web1.png",
+        "./img/edupulse/web/web2.png",
+        "./img/edupulse/web/web3.png",
+        "./img/edupulse/web/web4.png",
+        "./img/edupulse/web/web5.png",
+        "./img/edupulse/web/web6.png",
+        "./img/edupulse/web/web7.png",
+        "./img/edupulse/web/web8.png",
+        "./img/edupulse/web/web9.png",
+        "./img/edupulse/web/web10.png",
+        "./img/edupulse/web/web11.png",
+        "./img/edupulse/web/web12.png"
+      ],
+      "title": "EduPulse 360",
+      "description": "A robust School Management System (ERP) designed to streamline academic, financial, and administrative operations. Features include student management, fee tracking, and real-time analytics.",
+      "technologies": [
+        "Go",
+        "React",
+        "PostgreSQL",
+        "Wails (Desktop)",
+        "Docker"
+      ],
+      "link": "https://github.com/Script-Savant/edu-pulse-360"
+    },
+    {
+      "id": "6",
+      "type": "link",
+      "src": "./img/placeholder-image.png",
+      "title": "RankSavanna",
+      "description": "Enterprise SaaS platform unifying SEO Intelligence, POS Suite, and ERP. Built to empower businesses with data-driven insights and automated workflows.",
+      "technologies": [
+        "Go",
+        "TypeScript",
+        "Lightpanda",
+        "AWS",
+        "M-Pesa API",
+        "Binance API",
+        "Paypal API"
+      ],
+      "link": "https://www.ranksavanna.co.ke"
     }
+  ],
+  "tech_stack": [
+    "Go",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Django",
+    "AWS",
+    "Docker",
+    "PostgreSQL",
+    "Git",
+    "Linux",
+    "Bash",
+    "Redux"
   ],
   "testimonial": [
     {

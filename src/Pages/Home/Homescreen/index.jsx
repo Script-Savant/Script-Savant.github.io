@@ -6,6 +6,7 @@ import MyPortfolio from "../MyPortfolio";
 import MySkills from "../MySkills";
 import Testimonial from "../Testimonials";
 import Resume from "../Resume"
+import GithubStats from "../GithubStats";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonial />
       <ContactMe />
       <Resume />
+      <GithubStats />
       <Footer />
     </>
   );

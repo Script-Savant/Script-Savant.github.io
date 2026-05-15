@@ -4,8 +4,8 @@ import data from "../../data/index.json";
 
 export default function HeroSection() {
   return (
-    <section id="heroSection" className="hero--section" data-aos="fade-up">
-      <div className="hero--section--content--box">
+    <section id="heroSection" className="hero--section">
+      <div className="hero--section--content--box" data-aos="fade-up">
         <div className="hero--section--content">
           <p className="section--title">Hey, I'm {data.hero.title}</p>
           <h5 className="hero--section--title"  style={{fontSize: '3rem', fontWeight:'normal'}}>

@@ -3,6 +3,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Pages/Home/Navbar";
 import Home from "./Pages/Home/Homescreen";
+import GithubStats from "./Pages/Home/GithubStats";
+import ScrollToTop from "./Pages/Home/ScrollToTop";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -29,8 +31,9 @@ function App() {
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="*" element={<div>404 Not Found</div>}></Route>
+          <Route path="*" element={<div>404 Page Not Found</div>}></Route>
         </Routes>
+        <ScrollToTop />
       </Router>
     </div>
   );

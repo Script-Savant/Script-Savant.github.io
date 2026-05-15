@@ -146,26 +146,25 @@ function Navbar({ isDarkMode, toggleDarkMode }) {
               Resume
             </a>
           </li> */}
-          
+          <li>
+            <button onClick={toggleDarkMode} className="btn navbar--content" style={{ background: 'transparent', border: 'none', padding: '0', display: 'flex', alignItems: 'center' }}>
+              {isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
+            </button>
+          </li>
         </ul>
       </div>
-      <div className="d-flex align-items-center gap-3">
-        <button onClick={toggleDarkMode} className="btn" style={{ background: 'transparent', border: 'none', fontSize: '1.5rem', padding: '0' }}>
-          {isDarkMode ? '☀️' : '🌙'}
-        </button>
-        <Link
-          onClick={closeMenu}
-          activeClass="navbar--active-content"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          to="Contact"
-          className="btn btn-outline-primary"
-        >
-          Contact Me
-        </Link>
-      </div>
+      <Link
+        onClick={closeMenu}
+        activeClass="navbar--active-content"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        to="Contact"
+        className="btn btn-outline-primary"
+      >
+        Contact Me
+      </Link>
     </nav>
   );
 }

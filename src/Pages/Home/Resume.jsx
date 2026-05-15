@@ -8,7 +8,7 @@ const Resume = () => {
                     <div className="section-title text-center mb-5">
                         <p className="sub--title">My Professional Journey</p>
                         <h2 className="section--heading" style={{ fontSize: '2.5rem', fontWeight: '700' }}>Resume</h2>
-                        <p className="fs-5 text-dark fst-italic mt-3" style={{ color: "var(--darkblue)" }}>
+                        <p className="fs-5 fst-italic mt-3" style={{ color: "var(--darkblue)" }}>
                             Results-driven Software Engineer with 6+ years of experience building scalable full-stack applications and cloud solutions.
                         </p>
                     </div>
@@ -16,8 +16,8 @@ const Resume = () => {
                     <div className="row my-4">
                         <div className="col-lg-6 px-4">
                             <h3 className="resume-title mb-4" style={{ color: "var(--primary)", borderBottom: "2px solid var(--primary)", paddingBottom: "10px" }}>Summary & Achievements</h3>
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
-                                <h4 className="text-dark fw-bold mb-3">Alex Njuguna Kinuthia</h4>
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
+                                <h4 className="fw-bold mb-3">Alex Njuguna Kinuthia</h4>
                                 <p className="mb-3">
                                     <em>
                                         Proven track record of deploying production systems serving thousands of users, implementing machine learning models that improved decision-making accuracy by 25%, and architecting AWS infrastructures that reduced operational costs by 30%.
@@ -30,8 +30,8 @@ const Resume = () => {
                                 </ul>
                             </div>
 
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded" style={{ borderLeft: "4px solid #00c853" }}>
-                                <h4 className="text-dark fw-bold mb-3">Key Achievements</h4>
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded" style={{ borderLeft: "4px solid #00c853" }}>
+                                <h4 className="fw-bold mb-3">Key Achievements</h4>
                                 <ul style={{ lineHeight: "1.8", color: "var(--darkblue)" }}>
                                     <li><strong>Reduced Cloud Costs:</strong> Restructured AWS resource allocation reducing monthly spend without compromising reliability.</li>
                                     <li><strong>ML Model for Revenue:</strong> Built predictive pricing model improving forecast accuracy by 25% for a retail client.</li>
@@ -43,18 +43,18 @@ const Resume = () => {
                             </div>
 
                             <h3 className="resume-title mb-4 mt-5" style={{ color: "var(--primary)", borderBottom: "2px solid var(--primary)", paddingBottom: "10px" }}>Education</h3>
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded">
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded">
                                 <h4 className="fw-bold">Master of Science in Financial Engineering</h4>
                                 <h5>In Progress (Expected 2028)</h5>
-                                <p><em>WorldQuant University</em></p>
+                                <p><em>KCA University</em></p>
                             </div>
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded">
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded">
                                 <h4 className="fw-bold">Bachelor of Science in Applied Computer Science</h4>
                                 <h5>2015 - 2019</h5>
                                 <p><em>Kisii University</em></p>
                                 <p>Thesis: "Leveraging Machine Learning for Symptom-Based Diagnosis"</p>
                             </div>
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded">
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded">
                                 <h4 className="fw-bold">Certificate in Software Engineering</h4>
                                 <h5>2024</h5>
                                 <p><em>ALX Software Engineering School</em></p>
@@ -64,9 +64,9 @@ const Resume = () => {
                         <div className="col-lg-6 px-4">
                             <h3 className="resume-title mb-4" style={{ color: "var(--primary)", borderBottom: "2px solid var(--primary)", paddingBottom: "10px" }}>Professional Experience</h3>
 
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
                                 <h4 className="fw-bold">Co-Founder & Chief Technology Officer</h4>
-                                <h5 className="text-muted mb-2">Feb 2025 – Present</h5>
+                                <h5 className="mb-2">Feb 2025 – Present</h5>
                                 <p><em>RankSavanna | www.ranksavanna.co.ke</em></p>
                                 <ul style={{ lineHeight: "1.8" }}>
                                     <li>Co-founded an enterprise SaaS platform unifying SEO Intelligence, POS Suite, and ERP under one subscription.</li>
@@ -76,9 +76,9 @@ const Resume = () => {
                                 </ul>
                             </div>
 
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
                                 <h4 className="fw-bold">Independent Software Engineering Contractor</h4>
-                                <h5 className="text-muted mb-2">Dec 2021 – Jan 2025</h5>
+                                <h5 className="mb-2">Dec 2021 – Jan 2025</h5>
                                 <ul style={{ lineHeight: "1.8" }}>
                                     <li>Architected 15+ AWS cloud solutions (EC2, S3, Lambda, RDS) achieving 99.9% up-time.</li>
                                     <li>Engineered full-stack applications with Python, Go, and Spring Boot serving 10,000+ users.</li>
@@ -87,9 +87,9 @@ const Resume = () => {
                                 </ul>
                             </div>
 
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded" style={{ borderLeft: "4px solid var(--primary)" }}>
                                 <h4 className="fw-bold">Software Engineer</h4>
-                                <h5 className="text-muted mb-2">July 2018 – Dec 2021</h5>
+                                <h5 className="mb-2">July 2018 – Dec 2021</h5>
                                 <p><em>Datacare Ltd</em></p>
                                 <ul style={{ lineHeight: "1.8" }}>
                                     <li>Developed enterprise web applications supporting 5,000+ concurrent users.</li>
@@ -99,7 +99,7 @@ const Resume = () => {
                             </div>
 
                             <h3 className="resume-title mb-4 mt-5" style={{ color: "var(--primary)", borderBottom: "2px solid var(--primary)", paddingBottom: "10px" }}>Certifications</h3>
-                            <div className="resume-item shadow-sm p-4 mb-4 bg-white rounded">
+                            <div className="resume-item shadow-sm p-4 mb-4 resume-card rounded">
                                 <ul style={{ lineHeight: "2" }}>
                                     <li><strong>AWS Certified Solutions Architect</strong></li>
                                     <li><strong>AWS Certified Cloud Practitioner</strong></li>

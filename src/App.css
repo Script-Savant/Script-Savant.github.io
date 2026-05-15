@@ -28,7 +28,7 @@ p {
   --bg-color: #FFFFFF;
   --bg-shade: #F9FAFB; /* Gray 50 */
   --github: #24292F;
-  --darkblue: #1E40AF;
+  --darkblue: #000000;
   --black: #000000;
   --white: #ffffff;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -48,6 +48,7 @@ body.dark-mode {
   --black: #FFFFFF;
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --darkblue: #FFFFFF;
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
 }
 
@@ -56,6 +57,14 @@ body.dark-mode {
 }
 
 .dark-mode .card {
+  background-color: var(--bg-shade);
+}
+
+.resume-card {
+  background-color: var(--white);
+}
+
+.dark-mode .resume-card {
   background-color: var(--bg-shade);
 }
 
@@ -101,20 +110,18 @@ body.dark-mode {
 }
 
 .btn-github {
-  color: var(--white);
+  color: #ffffff !important;
   background-color: var(--github);
+  border: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  border-radius: 8px;
-  box-shadow: var(--shadow-sm);
-  gap: 16px;
-  transition: var(--transition);
+  gap: 10px;
+  margin: 0 auto;
 }
 
 .btn-github:hover {
-  background-color: #111827;
+  background-color: #000000;
+  color: #ffffff;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
@@ -211,6 +218,7 @@ h3 {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 
 .navbar--items>ul {
@@ -271,7 +279,7 @@ h3 {
 
 /* Media Queries */
 @media only screen and (max-width: 768px) {
-  .btn-outline-primary {
+  .navbar .btn-outline-primary {
     display: none;
   }
 
@@ -572,25 +580,23 @@ h3 {
 
 .contact--input {
   display: flex;
-  font-family: "Roboto";
+  font-family: "Outfit", sans-serif;
   padding: 16px;
   align-items: center;
   align-self: stretch;
   border-radius: 8px;
   border: 1.333px solid var(--primary);
   background: var(--white);
+  color: var(--black);
 }
 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  /* Some browsers will not display the caret when using calc, so we put the fallback first */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>') white no-repeat 98.5% !important;
-  /* !important used for overriding all other customisations */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23033333"/></svg>') white no-repeat calc(100% - 20px);
-  /* Better placement regardless of input width */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5303 21.2052C16.2374 21.4981 15.7626 21.4981 15.4697 21.2052L7.82318 13.5587C7.53029 13.2658 7.53029 12.791 7.82318 12.4981L8.17674 12.1445C8.46963 11.8516 8.9445 11.8516 9.2374 12.1445L16 18.9071L22.7626 12.1445C23.0555 11.8516 23.5303 11.8516 23.8232 12.1445L24.1768 12.4981C24.4697 12.791 24.4697 13.2658 24.1768 13.5587L16.5303 21.2052Z" fill="%23818CF8"/></svg>') var(--white) no-repeat calc(100% - 20px) !important;
 }
+  /* Better placement regardless of input width */
 
 /*For IE*/
 select::-ms-expand {
@@ -655,10 +661,11 @@ input[type="checkbox"] {
 }
 
 .divider {
-  margin: 106px 0 42.67px;
-  height: 1.333px;
   width: 100%;
-  background: rgba(40, 41, 56, 0.55);
+  height: 1.333px;
+  background: var(--text-color);
+  opacity: 0.3;
+  margin: 106.667px 0 42.667px;
 }
 
 .footer--content--container {
@@ -919,4 +926,63 @@ input[type="checkbox"] {
 
 .about-me-description {
   animation: slideInFromRight 2s ease-out;
+}
+
+/* Tech Badges */
+.tech-badge {
+  background: var(--bg-shade);
+  color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid var(--primary);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.tech-badge:hover {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* GitHub Stats */
+.github-stats-section {
+  padding: 100px 20px;
+  background-color: var(--bg-color);
+}
+
+.github-card {
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.github-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Scroll To Top */
+.btn-scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.btn-scroll-top:hover {
+  background: var(--primary-hover);
+  transform: scale(1.1);
 }

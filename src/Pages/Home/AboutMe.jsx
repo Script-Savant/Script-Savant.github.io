@@ -4,8 +4,8 @@ import data from "../../data/index.json";
 export default function AboutMe() {
   return (
     <div>
-      <section id="AboutMe" className="about--section" data-aos="fade-up" data-aos-delay="200">
-        <div className="hero--section--content--box about--section--box">
+      <section id="AboutMe" className="about--section">
+        <div className="hero--section--content--box about--section--box" data-aos="fade-up" data-aos-delay="200">
           <div className="hero--section--content" style={{ width: "100%", maxWidth: "800px", margin: "0 auto", textAlign: "center" }}>
             <p className="section--title">About</p>
             <h1 className="skills-section--heading" style={{ fontSize: '2.5rem', fontWeight: '700', marginBottom: '20px' }}>{data.about.title}</h1>

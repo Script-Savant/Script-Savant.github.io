@@ -3,8 +3,8 @@ import data from "../../data/index.json";
 export default function MyPortfolio() {
   return (
 
-    <section className="portfolio--section" id="MyPortfolio" data-aos="fade-up" data-aos-delay="400">
-      <div className="portfolio--container-box">
+    <section className="portfolio--section" id="MyPortfolio">
+      <div className="portfolio--container-box" data-aos="fade-up" data-aos-delay="100">
         <div className="portfolio--container" style={{ paddingLeft: '100px', paddingRight: '80px' }}>
           <p className="sub--title">Recent Projects</p>
           <h2 className="section--heading">My Portfolio</h2>
@@ -40,23 +40,45 @@ export default function MyPortfolio() {
             <div className="col-md-6" key={index}>
               <div className="card m-2" style={{borderRadius: "12px", border: "none", boxShadow: "0 10px 30px rgba(0,0,0,0.05)"}}>
                 <div className="portfolio--section--img">
-                  <iframe
-                    src={item.src}
-                    alt="Placeholder"
-                    style={{ objectFit: "cover", width: "100%", borderRadius: "12px 12px 0 0" }}
-                    width="540"
-                    height="315"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    loading="lazy"
-                  ></iframe>
+                  {item.type === "video" && (
+                    <iframe
+                      src={item.src}
+                      style={{ objectFit: "cover", width: "100%", borderRadius: "12px 12px 0 0" }}
+                      width="100%"
+                      height="315"
+                      title={item.title}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                      loading="lazy"
+                    ></iframe>
+                  )}
+                  {item.type === "slider" && (
+                    <div id={`carousel-${item.id}`} className="carousel slide" data-bs-ride="carousel">
+                      <div className="carousel-inner">
+                        {item.src.map((img, imgIndex) => (
+                          <div key={imgIndex} className={`carousel-item ${imgIndex === 0 ? "active" : ""}`}>
+                            <img src={img} className="d-block w-100" alt={`${item.title} ${imgIndex}`} style={{ height: "315px", objectFit: "cover", borderRadius: "12px 12px 0 0" }} />
+                          </div>
+                        ))}
+                      </div>
+                      <button className="carousel-control-prev" type="button" data-bs-target={`#carousel-${item.id}`} data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
+                      </button>
+                      <button className="carousel-control-next" type="button" data-bs-target={`#carousel-${item.id}`} data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  )}
+                  {item.type === "link" && (
+                    <img src={item.src} alt={item.title} style={{ width: "100%", height: "315px", objectFit: "cover", borderRadius: "12px 12px 0 0" }} />
+                  )}
                 </div>
                 <div className="portfolio--section--card--content">
                   <div>
                     <h5 className="portfolio--section--title text-capitalize" style={{ marginBottom: '0.5rem' }}>{item.title}</h5>
-                    {/* <p className="text-md">{item.description}</p> */}
                   </div>
                   <div className="technologies d-flex flex-wrap gap-2 my-3">
                     {item.technologies.map((technology, techIndex) => (
