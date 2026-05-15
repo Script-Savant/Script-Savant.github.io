@@ -2,7 +2,7 @@ import data from "../../data/index.json";
 
 export default function Testimonial() {
   return (
-    <section className="testimonial--section" id="testimonial">
+    <section className="testimonial--section" id="testimonial" data-aos="fade-up" data-aos-delay="500">
       <div className="portfolio--container-box">
         <div className="portfolio--container" style={{ paddingLeft: '100px', paddingRight: '80px' }}>
           <p className="sub--title">Clients Feedback</p>

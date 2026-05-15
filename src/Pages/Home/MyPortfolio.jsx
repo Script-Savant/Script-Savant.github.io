@@ -3,7 +3,7 @@ import data from "../../data/index.json";
 export default function MyPortfolio() {
   return (
 
-    <section className="portfolio--section" id="MyPortfolio">
+    <section className="portfolio--section" id="MyPortfolio" data-aos="fade-up" data-aos-delay="400">
       <div className="portfolio--container-box">
         <div className="portfolio--container" style={{ paddingLeft: '100px', paddingRight: '80px' }}>
           <p className="sub--title">Recent Projects</p>
@@ -50,6 +50,7 @@ export default function MyPortfolio() {
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
+                    loading="lazy"
                   ></iframe>
                 </div>
                 <div className="portfolio--section--card--content">

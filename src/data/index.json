@@ -1,4 +1,23 @@
 {
+  "hero": {
+    "title": "Alex",
+    "subtitle": "Full Stack",
+    "role": "Developer",
+    "strings": [
+      "Versatile developer crafting efficient solutions with creativity and precision.",
+      "Team player."
+    ]
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a results-driven Full-Stack Software Engineer with over 6 years of experience building scalable applications and cloud solutions. AWS Certified with a passion for driving impactful solutions.",
+    "badges": [
+      "6+ Years Experience",
+      "AWS Certified Solution Architect",
+      "B.Sc. Applied Computer Science",
+      "Machine Learning"
+    ]
+  },
   "skills": [
     {
       "id": "1",

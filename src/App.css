@@ -37,6 +37,28 @@ p {
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body.dark-mode {
+  --primary: #818CF8;
+  --primary-hover: #6366F1;
+  --heading-color: #F9FAFB;
+  --text-color: #D1D5DB;
+  --bg-color: #111827;
+  --bg-shade: #1F2937;
+  --white: #1F2937;
+  --black: #FFFFFF;
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
+}
+
+.dark-mode .navbar {
+  background: var(--bg-shade);
+}
+
+.dark-mode .card {
+  background-color: var(--bg-shade);
+}
+
 .btn {
   font-family: "Outfit", sans-serif;
   display: inline-block;

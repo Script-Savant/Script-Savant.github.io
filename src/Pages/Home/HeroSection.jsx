@@ -1,26 +1,29 @@
 import { Link } from "react-scroll";
 import { ReactTyped } from "react-typed";
+import data from "../../data/index.json";
 
 export default function HeroSection() {
   return (
-    <section id="heroSection" className="hero--section">
+    <section id="heroSection" className="hero--section" data-aos="fade-up">
       <div className="hero--section--content--box">
         <div className="hero--section--content">
-          <p className="section--title">Hey, I'm Alex</p>
+          <p className="section--title">Hey, I'm {data.hero.title}</p>
           <h5 className="hero--section--title"  style={{fontSize: '3rem', fontWeight:'normal'}}>
-            <span className="hero--section-title--color">Full Stack</span>{" "}
+            <span className="hero--section-title--color">{data.hero.subtitle}</span>{" "}
             <br />
-            Developer
+            {data.hero.role}
           </h5>
-          <Link to="Contact">
-            <button className="btn btn-primary">Get In Touch</button>
-          </Link>
+          <div className="d-flex gap-3 justify-content-center">
+            <Link to="Contact">
+              <button className="btn btn-primary">Get In Touch</button>
+            </Link>
+            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="btn btn-outline-primary">
+              Download CV
+            </a>
+          </div>
           <p className="hero--section-description" style={{ fontSize: "1rem" }}>
             <ReactTyped
-              strings={[
-                "Versatile developer crafting efficient solutions with creativity and precision.",
-                "Team player.",
-              ]}
+              strings={data.hero.strings}
               typeSpeed={100}
               loop
               backSpeed={20}

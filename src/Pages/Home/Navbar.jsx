@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-function Navbar() {
+function Navbar({ isDarkMode, toggleDarkMode }) {
   const [navActive, setNavActive] = useState(false);
 
   const toggleNav = () => {
@@ -149,18 +149,23 @@ function Navbar() {
           
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
+      <div className="d-flex align-items-center gap-3">
+        <button onClick={toggleDarkMode} className="btn" style={{ background: 'transparent', border: 'none', fontSize: '1.5rem', padding: '0' }}>
+          {isDarkMode ? '☀️' : '🌙'}
+        </button>
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="Contact"
+          className="btn btn-outline-primary"
+        >
+          Contact Me
+        </Link>
+      </div>
     </nav>
   );
 }
