@@ -37,13 +37,13 @@ export default function MyPortfolio() {
       <div className="container">
         <div className="row">
           {data?.portfolio?.map((item, index) => (
-            <div className="col-md-6">
-              <div key={index} className="card m-2">
+            <div className="col-md-6" key={index}>
+              <div className="card m-2" style={{borderRadius: "12px", border: "none", boxShadow: "0 10px 30px rgba(0,0,0,0.05)"}}>
                 <div className="portfolio--section--img">
                   <iframe
                     src={item.src}
                     alt="Placeholder"
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", width: "100%", borderRadius: "12px 12px 0 0" }}
                     width="540"
                     height="315"
                     title="YouTube video player"
@@ -57,14 +57,12 @@ export default function MyPortfolio() {
                     <h5 className="portfolio--section--title text-capitalize" style={{ marginBottom: '0.5rem' }}>{item.title}</h5>
                     {/* <p className="text-md">{item.description}</p> */}
                   </div>
-                  <div className="technologies fs-6">
-                    <div className="row">
-                      {item.technologies.map((technology) => (
-                        <div className="col-md-3">
-                          <button key={technology}>{technology}</button>
-                        </div>
-                      ))}
-                    </div>
+                  <div className="technologies d-flex flex-wrap gap-2 my-3">
+                    {item.technologies.map((technology, techIndex) => (
+                      <span key={techIndex} className="badge" style={{ backgroundColor: 'var(--primary-hover)', color: 'var(--white)', padding: '0.5rem 0.8rem', fontSize: '0.85rem', borderRadius: '20px', fontWeight: '500' }}>
+                        {technology}
+                      </span>
+                    ))}
                   </div>
 
                   <a

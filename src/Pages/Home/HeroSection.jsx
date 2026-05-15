@@ -30,13 +30,7 @@ export default function HeroSection() {
           </p>
         </div>
       </div>
-      <div className="hero--section--img">
-        <img
-          style={{ borderRadius: "10px", boxShadow: "5px 5px 10px" }}
-          src="./img/hero-img.jpg"
-          alt="Hero Section"
-        />
-      </div>
+
     </section>
   );
 }

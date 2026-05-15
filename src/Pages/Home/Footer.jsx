@@ -112,7 +112,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://x.com/favourite__son"
+                href="https://x.com/_alexkinuthia"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -132,7 +132,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/alex-njuguna-k/"
+                href="https://www.linkedin.com/in/alex-kinuthia/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -151,7 +151,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              +254117379468
+              +254117379486
             </li>
           </ul>
         </div>

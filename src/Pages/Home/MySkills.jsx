@@ -4,8 +4,8 @@ export default function MySkills() {
   return (
     <section className="skills--section" id="mySkills">
       <div style={{paddingLeft: '100px', paddingRight:'80px'}} className="portfolio--container text-center" >
-        <p className="section--title">My Skills</p>
-        <h2 className="skills--section--heading" style={{fontSize: '2rem', fontWeight:'normal'}}>My Expertise</h2>
+        <p className="sub--title">My Expertise</p>
+        <h2 className="section--heading" style={{fontSize: '2.5rem', fontWeight:'700'}}>Technical Skills</h2>
       </div>
       <div className="container">
         <div className="row">
